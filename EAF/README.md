@@ -6,6 +6,8 @@ This guide is intended for Mu2e collaborators using the Fermilab Elastic Analysi
 
 EAF is a web-based platform designed for Python analysis and ML tasks. It utilizes container-based infrastructure, distinguishing it from traditional virtual machines. This approach allows underlying hardware resources to be swapped without breaking the container, providing greater elasticity.
 
+![EAF Architecture](Images/EAF_scheme.png)
+
 ## Accessing EAF
 
 EAF is entirely web-based at [analytics-hub.fnal.gov](https://analytics-hub.fnal.gov). To access EAF from outside the FNAL network, you will need either:
@@ -52,7 +54,7 @@ For more information, visit [Off-site Electronic Access Instructions](https://li
    - Select "AL9"
    - Scroll to bottom and click "Start"
 
-The server may take a few minutes to initialize.
+The server may take a few minutes to initialise.
 
 ## JupyterHub Environment
 
@@ -61,6 +63,8 @@ Upon loading, you'll land on a JupyterHub launcher page offering various applica
 - Python notebook
 - Python file editor
 - Interactive Python console
+
+![JupyterHub Interface](Images/JupyterHub.png)
 
 Your user area will be automatically created in `/home` with access to:
 - `/exp/mu2e/app`
@@ -74,7 +78,7 @@ Resource limits per user:
 
 ## Conda/Mamba Setup
 
-Mamba is used for package and environment management. To initialize:
+Mamba is used for package and environment management. To initialise:
 
 1. Configure `.bash_profile`:
    ```bash
@@ -84,7 +88,7 @@ Mamba is used for package and environment management. To initialize:
    fi
    ```
 
-2. Initialize Mamba:
+2. Initialise Mamba:
    ```bash
    mamba init
    ```
@@ -105,6 +109,7 @@ The Mu2e environment provides necessary analysis tools. To set up:
    ```
 
 ### Available Libraries
+
 - matplotlib
 - pandas
 - uproot
@@ -161,7 +166,7 @@ mamba activate my_env
 
 Install packages using: `mamba install <package_name>`
 
-## Anapytools
+## anapytools
 
 The `mu2e_env` includes utilities from [anapytools](https://github.com/Mu2e/anapytools.git) for interfacing with `SAM` and `/pnfs`.
 
@@ -192,3 +197,9 @@ def process_function(filename):
 
 processor.multithread(process_function, file_list)
 ```
+
+Example of reading data:
+![Reading Data Example](Images/ReadData.png)
+
+Example of parallel processing:
+![Parallel Processing Example](Images/Parallelise.png)
