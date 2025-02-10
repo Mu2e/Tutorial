@@ -4,7 +4,7 @@ This guide is intended for Mu2e collaborators using the Fermilab Elastic Analysi
 
 ## Overview
 
-EAF is a web-based platform designed for Python analysis and ML tasks. It utilizes container-based infrastructure, distinguishing it from traditional virtual machines. This approach allows underlying hardware resources to be swapped without breaking the container, providing greater elasticity.
+EAF is a web-based platform designed for Python analysis and ML tasks. It utilises container-based infrastructure, distinguishing it from traditional virtual machines. This approach allows underlying hardware resources to be swapped without breaking the container, providing greater elasticity.
 
 ![EAF Architecture](Images/EAF_scheme.png)
 
@@ -92,7 +92,7 @@ Mamba is used for package and environment management. To initialise:
    ```bash
    mamba init
    ```
-   Start a new shell after initialization.
+   Start a new shell after initialisation.
 
 ## Mu2e Environment
 
