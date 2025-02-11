@@ -49,5 +49,5 @@ Example:
 ## Navigation
 
 - Previous: [Exercise: "Hello world!"](07-HelloWorld.md)
-- Next: [Custom environments"](09-CustomEnvironments.md)
+- Next: [Custom environments](09-CustomEnvironments.md)
 - [Back to Main](../README.md)
