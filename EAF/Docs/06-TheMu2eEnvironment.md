@@ -73,5 +73,5 @@ Activate after `muse setup` to ensure that your environment variables are set co
 ## Navigation
 
 - Previous: [Using Conda/Mamba](05-CondaMamba.md)
-- Next: [Excerise: "hello world!"](07-HelloWorld.md)
+- Next: [Exercise: "Hello world!"](07-HelloWorld.md)
 - [Back to Main](../README.md)

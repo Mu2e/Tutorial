@@ -1,4 +1,4 @@
-# Excercise: "Hello world!" 
+# Exercise: "Hello world!" 
 
 If you have been following the steps in the previous sections, you should now have a running EAF server and access to the `mu2e_env` Python environment. 
 
