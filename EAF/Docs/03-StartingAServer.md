@@ -9,7 +9,7 @@
    - Select "AL9"
    - Scroll to bottom and click "Start"
 
-![Server starting](Images/ServerStarting.png)
+![Server starting](../Images/ServerStarting.png)
 
 The server may take a few minutes to initialise.
 

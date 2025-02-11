@@ -1,6 +1,6 @@
 # anapytools
 
-[`anapytools`](https://github.com/Mu2e/anapytools.git) is a custom utilies library installed in `mu2e_env` that allows users to interface with `SAM` and `/pnfs` from EAF, and provides a multithreading tool.
+[`anapytools`](https://github.com/Mu2e/anapytools.git) is a custom utilities library, installed in `mu2e_env`, that allows users to interface with `SAM` and `/pnfs` from EAF, and provides a multithreading tool.
 
 ## Setup
 
@@ -12,7 +12,7 @@ kinit ${USER}@FNAL.GOV
 
 ## Example Usage 
 
-`anapytools` provides a tool to enable remote access to `/pnfs` using `xroot`, which is not directly accessible from EAF. 
+`anapytools` provides a tool to enable remote access to `/pnfs`, which is not directly accessible from EAF. 
 
 ```python
 # Create file list from SAM dataset
@@ -24,13 +24,13 @@ file_list = reader.get_file_list(defname='nts.mu2e.CeEndpointMix1BBSignal.Tutori
 file = reader.read_file(filename='nts.sgrant.CosmicCRYExtractedCatTriggered.MDC2020ae_best_v1_3.001205_00000000.root')
 ```
 
-Example of reading data:
+Example:
+
 ![Reading Data Example](../Images/ReadData.png)
 
 In addition `anapytools` provides a tool for mutlithreading, which is extremely useful for running analysis jobs over multiple files. 
 
 ```python
-
 # Parallel processing
 from anapytools.parallelise import ParallelProcessor
 processor = ParallelProcessor()
@@ -42,10 +42,12 @@ def process_function(filename):
 processor.multithread(process_function, file_list)
 ```
 
-Example of parallel processing:
+Example:
+
 ![Parallel Processing Example](../Images/Parallelise.png)
 
 ## Navigation
 
-- Previous: [The Mu2e Python Environment](06-TheMu2eEnvironment.md)
+- Previous: [Exercise: "Hello world!"](07-HelloWorld.md)
+- Next: [Custom environments"](09-CustomEnvironments.md)
 - [Back to Main](../README.md)

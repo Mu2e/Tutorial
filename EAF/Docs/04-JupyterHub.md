@@ -1,21 +1,25 @@
-# Navigating JupyterHub
+# Navigating EAF
 
-Upon loading, you'll land on a JupyterHub launcher page offering various applications:
+Upon loading, you should land on a `JupyterHub` launcher page that offers a suite of applications:
+
 - Terminal
-- Python notebook
-- Python file editor
+- Python notebook  
+- Text editor
 - Interactive Python console
 
-![JupyterHub Interface](../Images/JupyterHub.png)
+![The EAF area](../Images/JupyterHub.png)
 
 ## Directory Access
 
 Your user area will be automatically created in `/home` with access to:
+
 - `/exp/mu2e/app`
 - `/exp/mu2e/data`
 - `/pnfs` (possible via `xroot`, see [`anapytools`](07-anapytools.md))
 
-## Resource
+You can test this by starting a terminal and running `ls /exp/mu2e`. 
+
+## Resources
 
 Available resources per user:
 - 8 guaranteed cores

@@ -1,4 +1,4 @@
-## Custom Environments
+## Custom environments
 
 If desired, you can create your own environment from scratch.
 
@@ -10,5 +10,7 @@ mamba activate my_env
 
 Install packages using: `mamba install <package_name>`
 
-- Previous: [anapytools](07-anapytools.md)
+See [Using Conda/Mamba](05-CondaMamba.md) for more help!
+
+- Previous: [anapytools](08-anapytools.md)
 - [Back to Main](../README.md)
