@@ -11,5 +11,6 @@ This guide is intended for Mu2e collaborators using the Fermilab Elastic Analysi
 1. [Using Conda/Mamba](Docs/05-CondaMamba.md)
 1. [The Mu2e Python Environment](Docs/06-TheMu2eEnvironment.md)
 1. [Exercise: "hello world!"](Docs/07-HelloWorld.md)
-1. [anapytools](Docs/08-anapytools.md)
-1. [Custom Environments](Docs/09-CustomEnvironments.md)
+1. [pyutils](Docs/08-pyutils.md)
+1. [anapytools (depracted)](Docs/09-anapytools-depracted.md)
+1. [Custom Environments](Docs/10-CustomEnvironments.md)
