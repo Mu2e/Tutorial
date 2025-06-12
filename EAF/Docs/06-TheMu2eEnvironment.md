@@ -14,7 +14,9 @@ To set up this environment on EAF:
    mamba activate mu2e_env
    ```
 
-## Available libraries in `v1.2.0`
+## Pacakges
+
+As of `v2.0.0`:
 
 - matplotlib
 - pandas
@@ -35,7 +37,13 @@ To set up this environment on EAF:
 - vector
 - plotly
 - dash
-- anapytools (v2.0.0) 
+- tdqm 
+- hist
+- **pyutils (Mu2e Python utilties)** 
+
+Environment versions <2.0.0 contain the deprecated [`anapytools`](https://github.com/Mu2e/anapytools.git), rather than [`pyutils`](https://github.com/Mu2e/pyutils.git). See the [pyutils section](08-pyutils.md) for more information.
+
+Also see the [wiki](https://mu2ewiki.fnal.gov/wiki/Elastic_Analysis_Facility_(EAF)#The_Mu2e_environment) for details on the various versions of the Mu2e Python environment.
 
 ## Use on the `gpvms`
 
