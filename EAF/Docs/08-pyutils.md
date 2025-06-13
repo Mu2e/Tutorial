@@ -7,5 +7,5 @@ Please see the [`pyutils`](https://github.com/Mu2e/pyutils.git) GitHub page for 
 ## Navigation
 
 - Previous: [Exercise: "Hello world!"](07-HelloWorld.md)
-- Next: [`anapytools` (deprecated)](09-anapytools-deprecated.md)
+- Next: [Custom environments](09-CustomEnvironments.md)
 - [Back to Main](../README.md)

@@ -12,5 +12,5 @@ Install packages using: `mamba install <package_name>`
 
 See [Using Conda/Mamba](05-CondaMamba.md) for more help!
 
-- Previous: [anapytools](09-anapytools-deprecated.md)
+- Previous: [pyutils](08-pyutils.md)
 - [Back to Main](../README.md)
