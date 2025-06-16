@@ -1,8 +1,10 @@
 # The Mu2e Python environment
 
-To ensure that users have immediate access to the libraries and tools needed to conduct analysis, we have an installed a Mu2e Python environment on `/cvmfs`, called `mu2e_env`, that can used on **both** EAF and the virtual machines.
+To ensure that users have immediate access to the libraries and tools needed to conduct analysis, we have installed a Mu2e Python environment on `/cvmfs` that can used on **both** EAF and the virtual machines. It also features an in-built kernel, so the environment can be used interactively. 
 
-To set up this environment on EAF:
+## Use on EAF
+
+To set up the environment on EAF:
 
 1. Create an environment symlink to the `current` version:
    ```bash
@@ -14,7 +16,41 @@ To set up this environment on EAF:
    mamba activate mu2e_env
    ```
 
-## Available libraries in `v1.2.0`
+## Use on the `gpvms`
+
+To activate the environment, first run `mu2einit` and then **one** `pyenv` command, like
+
+```
+mu2einit # or "source /cvmfs/mu2e.opensciencegrid.org/setupmu2e-art.sh"
+pyenv ana # Setup the current environment
+pyenv rootana # Setup the current environment, plus ROOT for pyROOT users 
+pyenv ana 1.2.0 # Setup a specific version
+pyenv -h # Get help (--help and pyenv with no flag will also return help)
+```
+
+If `pyenv` does not work, please source the activation script directly, as shown below, and report the issue to Sam Grant.
+
+```
+source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/activate
+```
+
+Also note that `mu2einit` should be aliased to `source /cvmfs/mu2e.opensciencegrid.org/setupmu2e-art.sh` in your `~/.bashrc` (or `~/.my_bashrc`).
+
+When using alongside `muse`, it is advisable to run the activation script after `muse setup` to ensure that your environment variables are set correctly. 
+
+```bash
+mu2einit
+muse setup ops
+pyenv ana # or source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/activate
+```
+
+## Interactive use 
+
+Environment versions >=1.2.0 include an in-built interactive kernel, called `mu2e_env`, which is available automatically. See the following exercise for more information! 
+
+## Packages
+
+As of `v2.0.0`:
 
 - matplotlib
 - pandas
@@ -35,40 +71,15 @@ To set up this environment on EAF:
 - vector
 - plotly
 - dash
-- anapytools (v2.0.0) 
+- tdqm 
+- hist
+- **pyutils (Mu2e Python utilties)** 
 
-## Use on the `gpvms`
+Environment versions <2.0.0 contain the deprecated [`anapytools`](https://github.com/Mu2e/anapytools.git), rather than [`pyutils`](https://github.com/Mu2e/pyutils.git). See the [pyutils section](08-pyutils.md) for more information.
 
-To use `mu2e_env` on the Mu2e virtual machines:
+Also see the [wiki](https://mu2ewiki.fnal.gov/wiki/Elastic_Analysis_Facility_(EAF)#The_Mu2e_environment) for details on the various versions of the Mu2e Python environment.
 
-```bash
-# Activate
-source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/activate
 
-# Deactivate
-source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/deactivate
-```
-
-Suggested aliases for `.my_bashrc`:
-
-```bash
-alias pystart="source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/activate"
-alias pystop="source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/deactivate"
-```
-
-When using alongside `muse`:
-
-```bash
-mu2einit
-muse setup ops
-pystart # or source /cvmfs/mu2e.opensciencegrid.org/env/ana/current/bin/activate
-```
-
-Activate after `muse setup` to ensure that your environment variables are set correctly. 
-
-## Interactive use 
-
-`mu2e_env` also includes an in-built interactive kernel, also called `mu2e_env`. See the following exercise for more information! 
 
 ## Navigation
 

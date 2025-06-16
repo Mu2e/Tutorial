@@ -32,5 +32,5 @@ Note that attempts to run code and import modules may run slowly on the very fir
 ## Navigation
 
 - Previous: [The Mu2e Python environment](06-TheMu2eEnvironment.md)
-- Next: [anapytools](08-anapytools.md)
+- Next: [pyutils](08-pyutils.md)
 - [Back to Main](../README.md)

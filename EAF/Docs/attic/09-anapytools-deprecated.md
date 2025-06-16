@@ -1,4 +1,6 @@
-# anapytools
+# `anapytools` (deprecated)`
+
+Environment versions <2.0.0 contain the deprecated [`anapytools`](https://github.com/Mu2e/anapytools.git), which has been superceded by [`pyutils`](https://github.com/Mu2e/pyutils.git). 
 
 [`anapytools`](https://github.com/Mu2e/anapytools.git) is a custom utilities library, installed in `mu2e_env`, that allows users to interface with `SAM` and `/pnfs` from EAF, and provides a multithreading tool.
 
@@ -48,6 +50,6 @@ Example:
 
 ## Navigation
 
-- Previous: [Exercise: "Hello world!"](07-HelloWorld.md)
-- Next: [Custom environments](09-CustomEnvironments.md)
+- Previous: [`pyutils`](08-pyutils.md)
+- Next: [Custom environments](10-CustomEnvironments.md)
 - [Back to Main](../README.md)
