@@ -630,7 +630,7 @@ physics: {
          }
          physics: {
             pdgId: 11
-            spectrumFileName: "Offline/ConditionsService/data/czarnecki_szafron_Al_2016.tbl"
+            spectrumFileName: "Offline/EventGenerator/data/czarnecki_szafron_Al_2016.tbl"
             spectrumShape: "tabulated"
             spectrumVariable: "totalEnergy"
          }
@@ -647,7 +647,7 @@ physics: {
          }
          physics: {
             pdgId: 11
-            spectrumFileName: "Offline/ConditionsService/data/czarnecki_Al.tbl"
+            spectrumFileName: "Offline/EventGenerator/data/czarnecki_Al.tbl"
             spectrumShape: "tabulated"
             spectrumVariable: "totalEnergy"
          }
