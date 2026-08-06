@@ -1,13 +1,21 @@
 # Accessing EAF
 
-EAF is entirely web-based at [analytics-hub.fnal.gov](https://analytics-hub.fnal.gov). To access EAF from outside of the FNAL network, you will need either:
+EAF is entirely web-based at [eaf.fnal.gov](https://eaf.fnal.gov/). To access EAF from outside of the FNAL network, you will need either:
 
 - A Fermilab VPN connection; or
 - A configured proxy. 
 
 An addition, you will need an active services account.
 
-## Setting up a Firefox proxy (SCD recommended method)
+## Setting up a Firefox proxy
+
+See [proxy](https://eafdocs.fnal.gov/master/03_proxy.html)
+1. Ensure you have a valid kerberos ticket:
+   ```bash
+   klist  # Check ticket
+   kinit <username>@FNAL.GOV  # Create new ticket
+   ```
+
 
 1. Ensure you have a valid kerberos ticket:
    ```bash
