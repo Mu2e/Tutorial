@@ -137,7 +137,7 @@ namespace mu2e {
       {
         int crystalId                 = CaloSiPMId(digi.SiPMID()).crystal().id();
 	int diskId                    = cal.crystal(crystalId).diskID();
-	CLHEP::Hep3Vector crystalPos  = cal.geomUtil().mu2eToDiskFF(diskId,cal.crystal(crystalId).position());  //in disk FF frame
+	CLHEP::Hep3Vector crystalPos  = cal.mu2eToDiskFF(diskId,cal.crystal(crystalId).position());  //in disk FF frame
 
           cryTime_[nDigis_]      = digi.t0();
 	  int et = 0;
