@@ -113,7 +113,6 @@ physics: {
          bufferDigi: 5
          caloShowerModuleLabel: "CaloShowerStepROFromShowerStep"
          diagLevel: 0
-         digiSampling: 5
          dynamicRange: 2000
          endTimeBuffer: 80
          energyScale: 60
